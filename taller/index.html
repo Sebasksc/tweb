@@ -3,10 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina</title>
+    <title>Impacto de las Tecnologías Web en la Sociedad y los Negocios</title>
+    <style>
+        body {
+            background-color: #000000; /* Fondo negro */
+            color: #ffffff; /* Texto blanco */
+            font-family: Arial, sans-serif; /* Fuente estándar */
+            margin: 0;
+            padding: 20px;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-height: 100px;
+            margin-right: 25px; /* Espacio entre el logo y los subtítulos */
+        }
+        h1 {
+            font-size: 2em;
+            text-align: left;
+            margin-top: 120px; /* Desplazar 4 líneas hacia abajo */
+            margin-bottom: 10px;
+        }
+        .subtitles {
+            display: flex;
+            align-items: center;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-right: 20px; /* Espacio entre los subtítulos */
+            position: relative;
+            cursor: pointer;
+        }
+        .tooltip {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #000000; /* Fondo negro */
+            color: #ffffff; /* Texto blanco */
+            padding: 10px;
+            border-radius: 5px;
+            white-space: nowrap;
+            margin-top: 10px;
+            border: 1px solid #00aaff; /* Borde azul */
+        }
+        .tooltip.active {
+            display: block;
+        }
+        .documental {
+            color: #808080; /* Color gris */
+            font-size: 1.2em;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 20px; /* Espacio adicional debajo del texto "Documental" */
+        }
+        .text-box {
+            background-color: #333333; /* Color de fondo del cuadro de texto */
+            color: #ffffff; /* Texto blanco */
+            padding: 10px;
+            border-radius: 5px;
+            float: left; /* Colocar el cuadro de texto a la izquierda */
+        }
+        .image-right {
+            float: right; /* Colocar la imagen a la derecha */
+            max-width: 1000px; /* Ancho máximo de la imagen */
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>pruebas</h1>
-    
+    <div class="header-content">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoeDVyKR4LS4KK8V43x0PFlAK2w6zp5SI3bNIz-0otTSGe_R-2jN21w13oRPklSuJhBH8&usqp=CAU" alt="Logo">
+        </div>
+        <div class="subtitles">
+            <h2 id="mas">Más
+                <span class="tooltip" id="tooltip">Contáctanos</span>
+            </h2>
+            <h2>pag2</h2>
+            <h2>pag3</h2>
+        </div>
+    </div>
+    <h1>Impacto de las Tecnologías Web en la Sociedad y los Negocios 
+    </h1>
+    <div class="documental">Documental</div>
+    <div class="text-box">
+        Las tecnologías web han transformado profundamente nuestra sociedad y la forma en que se conducen los negocios. Desde la llegada de Internet, hemos presenciado una revolución que ha impactado todos los aspectos de nuestras vidas, desde la comunicación hasta el comercio, la educación y el entretenimiento.
+
+        Las redes sociales, correos electrónicos y aplicaciones de mensajería instantánea han permitido la comunicación en tiempo real a nivel global, reduciendo barreras geográficas y facilitando el intercambio instantáneo de información.
+
+        El comercio electrónico ha crecido exponencialmente con empresas como Amazon y Alibaba, ofreciendo conveniencia sin precedentes y permitiendo a pequeñas empresas competir globalmente, sin restricciones de ubicación y operando 24/7.
+
+        Los servicios de streaming como Netflix y YouTube han cambiado la forma en que consumimos contenido, ofreciendo acceso a una vasta biblioteca bajo demanda, mejorando la experiencia del usuario y creando nuevas oportunidades para creadores y artistas.
+
+    </div>
+    <img class="image-right" src="https://www.proun.es/wp-content/uploads/2020/10/5-tecnologias-web-actuales.jpg" alt="imagen tecnologias">
+
+    <script>
+        document.getElementById('mas').addEventListener('click', function() {
+            var tooltip = document.getElementById('tooltip');
+            tooltip.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
