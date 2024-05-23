@@ -29,6 +29,22 @@ h2 {
     margin-right: 20px; /* Espacio entre los subtítulos */
     position: relative;
     cursor: pointer;
+    
+}
+h3 {
+    font-size: 2.5em;
+    margin-right: 20px; /* Espacio entre los subtítulos */
+    position: relative;
+    cursor: pointer;
+    margin-top: 160px; /* Desplazar 4 líneas hacia abajo */
+    
+}
+h4 {
+    font-size: 1.5em;
+    margin-right: 20px; /* Espacio entre los subtítulos */
+    position: relative;
+    cursor: pointer;
+    
 }
 a h2 {
     color: #ffffff; /* Color blanco */
@@ -80,7 +96,7 @@ table {
 th, td {
     border: 1px solid #000000; /* Borde negro*/
     padding: 10px;
-    text-align: center;
+    text-align: justify;
 }
 /* Estilos específicos para la primera tabla */
 .first-table th, .first-table td {
