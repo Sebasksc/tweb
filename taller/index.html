@@ -37,6 +37,13 @@
             position: relative;
             cursor: pointer;
         }
+        a h2 {
+            color: #ffffff; /* Color blanco */
+            text-decoration: none; /* Quitar el subrayado */
+        }
+        a h2:hover {
+            color: #ffffff; /* Mantener el color blanco al pasar el ratón */
+        }
         .tooltip {
             display: none;
             position: absolute;
@@ -59,19 +66,26 @@
             font-size: 1.2em;
             text-align: left;
             margin-top: 0;
-            margin-bottom: 20px; /* Espacio adicional debajo del texto "Documental" */
+            margin-bottom: 30px; /* Espacio adicional debajo del texto "Documental" */
         }
-        .text-box {
-            background-color: #333333; /* Color de fondo del cuadro de texto */
-            color: #ffffff; /* Texto blanco */
-            padding: 10px;
-            border-radius: 5px;
-            float: left; /* Colocar el cuadro de texto a la izquierda */
-        }
-        .image-right {
+        
+        .imgtecnologias {
             float: right; /* Colocar la imagen a la derecha */
-            max-width: 1000px; /* Ancho máximo de la imagen */
+            max-width: 100%; /* Ancho máximo de la imagen */
             height: auto;
+        }
+        .table-container {
+            float: left; /* Colocar la tabla a la izquierda */
+            margin-right: 10px; /* Espacio entre la tabla y la imagen */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000000; /* Borde blanco */
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
@@ -80,29 +94,46 @@
         <div class="logo">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoeDVyKR4LS4KK8V43x0PFlAK2w6zp5SI3bNIz-0otTSGe_R-2jN21w13oRPklSuJhBH8&usqp=CAU" alt="Logo">
         </div>
-        <div class="subtitles">
+        <div class="subtitles">            
+            <a href="https://discoverychannel.es/" target="_blank">
+                <h2>Programas</h2>
+            </a>
             <h2 id="mas">Más
                 <span class="tooltip" id="tooltip">Contáctanos</span>
-            </h2>
-            <h2>pag2</h2>
-            <h2>pag3</h2>
+            </h2>            
         </div>
     </div>
-    <h1>Impacto de las Tecnologías Web en la Sociedad y los Negocios 
-    </h1>
-    <div class="documental">Documental</div>
-    <div class="text-box">
-        Las tecnologías web han transformado profundamente nuestra sociedad y la forma en que se conducen los negocios. Desde la llegada de Internet, hemos presenciado una revolución que ha impactado todos los aspectos de nuestras vidas, desde la comunicación hasta el comercio, la educación y el entretenimiento.
+    <h1 style="font-size: 3em;"> Impacto de las Tecnologías Web en la Sociedad y los Negocios</h1>
+    <div class="documental">Blog</div>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th style="font-size: 1.2em; color: #757474; text-align: justify;">Las tecnologías web han transformado profundamente nuestra sociedad y la forma en que se conducen los negocios. Desde la llegada de Internet, hemos presenciado una revolución que ha impactado todos los aspectos de nuestras vidas, desde la comunicación hasta el comercio, la educación y el entretenimiento.
 
-        Las redes sociales, correos electrónicos y aplicaciones de mensajería instantánea han permitido la comunicación en tiempo real a nivel global, reduciendo barreras geográficas y facilitando el intercambio instantáneo de información.
-
-        El comercio electrónico ha crecido exponencialmente con empresas como Amazon y Alibaba, ofreciendo conveniencia sin precedentes y permitiendo a pequeñas empresas competir globalmente, sin restricciones de ubicación y operando 24/7.
-
-        Los servicios de streaming como Netflix y YouTube han cambiado la forma en que consumimos contenido, ofreciendo acceso a una vasta biblioteca bajo demanda, mejorando la experiencia del usuario y creando nuevas oportunidades para creadores y artistas.
-
+                    Las redes sociales, correos electrónicos y aplicaciones de mensajería instantánea han permitido la comunicación en tiempo real a nivel global, reduciendo barreras geográficas y facilitando el intercambio instantáneo de información.
+            
+                    El comercio electrónico ha crecido exponencialmente con empresas como Amazon y Alibaba, ofreciendo conveniencia sin precedentes y permitiendo a pequeñas empresas competir globalmente, sin restricciones de ubicación y operando 24/7.
+            
+                    Los servicios de streaming como Netflix y YouTube han cambiado la forma en que consumimos contenido, ofreciendo acceso a una vasta biblioteca bajo demanda, mejorando la experiencia del usuario y creando nuevas oportunidades para creadores y artistas.</th>
+                <th><img src="https://www.proun.es/wp-content/uploads/2020/10/5-tecnologias-web-actuales.jpg" alt="tecnologia" class="imgtecnologias" style="max-width: 800px; height: auto;"></th>
+            </tr>
+        </table>
     </div>
-    <img class="image-right" src="https://www.proun.es/wp-content/uploads/2020/10/5-tecnologias-web-actuales.jpg" alt="imagen tecnologias">
-
+    <h2>No te pierdas</h2>
+    <table>
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+        </tr>
+        <tr>
+            <td>Fila 1, Columna 1</td>
+            <td>Fila 1, Columna 2</td>
+            <td>Fila 1, Columna 3</td>
+        </tr>
+        
+    </table>
+    
     <script>
         document.getElementById('mas').addEventListener('click', function() {
             var tooltip = document.getElementById('tooltip');
