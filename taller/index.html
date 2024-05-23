@@ -3,117 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impacto de las Tecnologías Web en la Sociedad y los Negocios</title>
-    <style>
-        body {
-            background-color: #000000; /* Fondo negro */
-            color: #ffffff; /* Texto blanco */
-            font-family: Arial, sans-serif; /* Fuente estándar */
-            margin: 0;
-            padding: 20px;
-        }
-        .header-content {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .logo img {
-            max-height: 100px;
-            margin-right: 25px; /* Espacio entre el logo y los subtítulos */
-        }
-        h1 {
-            font-size: 2em;
-            text-align: left;
-            margin-top: 120px; /* Desplazar 4 líneas hacia abajo */
-            margin-bottom: 10px;
-        }
-        .subtitles {
-            display: flex;
-            align-items: center;
-        }
-        h2 {
-            font-size: 1.5em;
-            margin-right: 20px; /* Espacio entre los subtítulos */
-            position: relative;
-            cursor: pointer;
-        }
-        a h2 {
-            color: #ffffff; /* Color blanco */
-            text-decoration: none; /* Quitar el subrayado */
-        }
-        a h2:hover {
-            color: #ffffff; /* Mantener el color blanco al pasar el ratón */
-        }
-        .tooltip {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #000000; /* Fondo negro */
-            color: #ffffff; /* Texto blanco */
-            padding: 10px;
-            border-radius: 5px;
-            white-space: nowrap;
-            margin-top: 10px;
-            border: 1px solid #062839; /* Borde azul */
-        }
-        .tooltip.active {
-            display: block;
-        }
-        .documental {
-            color: #808080; /* Color gris */
-            font-size: 1.2em;
-            text-align: left;
-            margin-top: 0;
-            margin-bottom: 30px; /* Espacio adicional debajo del texto "Documental" */
-        }
+    <link rel="stylesheet" href="styles.css">
+    <title>Impacto de las Tecnologías Web en la Sociedad y los Negocios</title>   
         
-        .imgtecnologias {
-            float: right; /* Colocar la imagen a la derecha */
-            max-width: 100%; /* Ancho máximo de la imagen */
-            height: auto;
-        }
-        .table-container {
-            float: left; /* Colocar la tabla a la izquierda */
-            margin-right: 20px; /* Espacio entre la tabla y la imagen */
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            margin-bottom: 50px;
-        }
-        th, td {
-            border: 1px solid #000000; /* Borde negro*/
-            padding: 10px;
-            text-align: center;
-        }
-        /* Estilos específicos para la primera tabla */
-        .first-table th, .first-table td {
-            color: #757474;
-            font-size: 1.2em;
-        }
-        .first-table th {
-            text-align: justify;
-        }
-        .second-table {
-        margin-bottom: 20px; /* Ajusta este valor según la cantidad de espacio que desees después de la tabla */
-        }
-
-        /* Estilos específicos para la segunda tabla */
-        .second-table th {
-            color: #15aad3;
-            font-size: 1.5em;
-            background-color: #000000cd;
-        }
-        .second-table td {
-            color: #000000;
-            font-size: 5em;
-            background-color: #000000a8; /* Fondo gris claro */
-        }
-        
-    </style>
 </head>
 <body>
     <div class="header-content">
@@ -153,13 +45,18 @@
             <th>Tecnologías web en la sociedad</th>
         </tr>
         <tr>
-            <td><img src="https://i.ytimg.com/vi/A3cGMNxRNJ0/maxresdefault.jpg" alt="tecnologia-negocio" class="img-negocios" style="max-width: 500px; height: auto;"></td>
-            <td><img src="https://miro.medium.com/v2/resize:fit:1400/0*UxBDcIM2GW1WSOUq" alt="tecnologia-sociedad" class="img-sociedad" style="max-width: 500px; height: auto;"></td>
-            <td><img src="https://missioncollege.edu/news/images/tedx1.png" alt="tecnologia-sociedad" class="img-sociedad" style="max-width: 500px; height: auto;"></td>
-            
+            <td><a href="page1.html"><img src="https://i.ytimg.com/vi/A3cGMNxRNJ0/maxresdefault.jpg" alt="tecnologia-negocio" class="img-negocios" style="max-width: 500px; height: auto;"></a></td>
+            <td><a href="page2.html" target="_blank"><img src="https://miro.medium.com/v2/resize:fit:1400/0*UxBDcIM2GW1WSOUq" alt="tecnologia-sociedad" class="img-sociedad" style="max-width: 500px; height: auto;"></a></td>
+            <td><a href="page3.html" target="_blank"><img src="https://missioncollege.edu/news/images/tedx1.png" alt="tecnologia-sociedad" class="img-sociedad" style="max-width: 500px; height: auto;"></a></td>
         </tr>
+        
     </table>
-    
+
+    <footer>
+        <div>Copyright Sebaskc</div>
+        <div>Diseño con fines educativos</div>
+    </footer>
+
     <script>
         document.getElementById('mas').addEventListener('click', function() {
             var tooltip = document.getElementById('tooltip');
