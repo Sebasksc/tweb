@@ -56,7 +56,7 @@
             border-radius: 5px;
             white-space: nowrap;
             margin-top: 10px;
-            border: 1px solid #00aaff; /* Borde azul */
+            border: 1px solid #062839; /* Borde azul */
         }
         .tooltip.active {
             display: block;
@@ -76,17 +76,43 @@
         }
         .table-container {
             float: left; /* Colocar la tabla a la izquierda */
-            margin-right: 10px; /* Espacio entre la tabla y la imagen */
+            margin-right: 20px; /* Espacio entre la tabla y la imagen */
         }
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 50px;
         }
         th, td {
-            border: 1px solid #000000; /* Borde blanco */
+            border: 1px solid #000000; /* Borde negro*/
             padding: 10px;
             text-align: center;
         }
+        /* Estilos específicos para la primera tabla */
+        .first-table th, .first-table td {
+            color: #757474;
+            font-size: 1.2em;
+        }
+        .first-table th {
+            text-align: justify;
+        }
+        .second-table {
+        margin-bottom: 20px; /* Ajusta este valor según la cantidad de espacio que desees después de la tabla */
+        }
+
+        /* Estilos específicos para la segunda tabla */
+        .second-table th {
+            color: #15aad3;
+            font-size: 1.5em;
+            background-color: #000000cd;
+        }
+        .second-table td {
+            color: #000000;
+            font-size: 5em;
+            background-color: #000000a8; /* Fondo gris claro */
+        }
+        
     </style>
 </head>
 <body>
@@ -106,9 +132,9 @@
     <h1 style="font-size: 3em;"> Impacto de las Tecnologías Web en la Sociedad y los Negocios</h1>
     <div class="documental">Blog</div>
     <div class="table-container">
-        <table>
+        <table class="first-table">
             <tr>
-                <th style="font-size: 1.2em; color: #757474; text-align: justify;">Las tecnologías web han transformado profundamente nuestra sociedad y la forma en que se conducen los negocios. Desde la llegada de Internet, hemos presenciado una revolución que ha impactado todos los aspectos de nuestras vidas, desde la comunicación hasta el comercio, la educación y el entretenimiento.
+                <th>Las tecnologías web han transformado profundamente nuestra sociedad y la forma en que se conducen los negocios. Desde la llegada de Internet, hemos presenciado una revolución que ha impactado todos los aspectos de nuestras vidas, desde la comunicación hasta el comercio, la educación y el entretenimiento.
 
                     Las redes sociales, correos electrónicos y aplicaciones de mensajería instantánea han permitido la comunicación en tiempo real a nivel global, reduciendo barreras geográficas y facilitando el intercambio instantáneo de información.
             
@@ -119,19 +145,19 @@
             </tr>
         </table>
     </div>
-    <h2>No te pierdas</h2>
-    <table>
+    <h2 style="font-size: 2em;  color: #ffffff;">No te pierdas</h2>
+    <table class="second-table">
         <tr>
-            <th>Encabezado 1</th>
-            <th>Encabezado 2</th>
-            <th>Encabezado 3</th>
+            <th>Tecnologías web en negocios</th>
+            <th>Riesgos y beneficios de las tecnologías web</th>
+            <th>Tecnologías web en la sociedad</th>
         </tr>
         <tr>
-            <td>Fila 1, Columna 1</td>
-            <td>Fila 1, Columna 2</td>
-            <td>Fila 1, Columna 3</td>
+            <td><img src="https://i.ytimg.com/vi/A3cGMNxRNJ0/maxresdefault.jpg" alt="tecnologia-negocio" class="img-negocios" style="max-width: 500px; height: auto;"></td>
+            <td><img src="https://miro.medium.com/v2/resize:fit:1400/0*UxBDcIM2GW1WSOUq" alt="tecnologia-sociedad" class="img-sociedad" style="max-width: 500px; height: auto;"></td>
+            <td><img src="https://missioncollege.edu/news/images/tedx1.png" alt="tecnologia-sociedad" class="img-sociedad" style="max-width: 500px; height: auto;"></td>
+            
         </tr>
-        
     </table>
     
     <script>
