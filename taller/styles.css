@@ -130,3 +130,6 @@ footer {
     text-align: center; /* Alineación del texto */
 }
 
+iframe {
+    border: none;
+}
