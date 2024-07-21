@@ -1,9 +1,14 @@
 body {
+    
     background-color: #000000; /* Fondo negro */
     color: #ffffff; /* Texto blanco */
-    font-family: Arial, sans-serif; /* Fuente estándar */
+    font-family: 'Lato', sans-serif; /* Fuente estándar */
     margin: 0;
     padding: 20px;
+}
+
+h1, h2, h3, h4, .documental, footer {
+    font-family: 'Lato', sans-serif; /* Usa la fuente Lato */
 }
 .header-content {
     display: flex;
@@ -62,8 +67,8 @@ h3 {
     
 }
 h3:hover {
-    color: #2cc2cf; /* Nuevo color de texto al pasar el ratón */
-    text-shadow: 2px 2px 10px rgba(26, 194, 232, 0.5); /* Sombra del texto al pasar el ratón */
+    color: #494949; /* Nuevo color de texto al pasar el ratón */
+    
 }
 
 h4 {
@@ -159,6 +164,12 @@ footer {
 
 iframe {
     border: none;
+    transition: transform 0.3s ease; /* Transición suave del efecto de transformación */
+}
+
+iframe:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del iframe al 110% */
+    z-index: 10; /* Asegura que el iframe se superponga sobre otros elementos */
 }
 
 @keyframes gradient-change {
@@ -182,4 +193,12 @@ iframe {
 
 .color-transition:hover {
     background: linear-gradient(90deg, #50a5d0, #ffffff); /* Gradiente de color al pasar el ratón */
+}
+img {
+    transition: transform 0.3s ease; /* Transición suave del efecto de transformación */
+}
+
+img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+    z-index: 10; /* Asegura que la imagen se superponga sobre otros elementos */
 }
